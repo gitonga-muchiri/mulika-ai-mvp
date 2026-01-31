@@ -6,5 +6,5 @@ SH_CLIENT_SECRET = "IgbWP48RT7vxjzhA8yfXC0kIqnEN21Sd"
 
 # This allows us to track different dates (Before vs After)
 # Format: Year-Month-Day
-DATE_BEFORE = "2024-01-01" 
-DATE_AFTER = "2025-01-01"
+DATE_BEFORE = "2023-01-01" 
+DATE_AFTER = "2024-01-01"
