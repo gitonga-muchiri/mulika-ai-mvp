@@ -1,17 +1,42 @@
+from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
-def create_fake_tender():
-    c = canvas.Canvas("sample_tender.pdf")
-    c.drawString(100, 800, "REPUBLIC OF KENYA")
-    c.drawString(100, 780, "MINISTRY OF ROADS AND TRANSPORT")
-    c.drawString(100, 750, "TENDER NOTICE: 2026/001")
-    c.drawString(100, 700, "Project Title: Construction of Karatina-Nyeri Feeder Road")
-    c.drawString(100, 680, "Location: Nyeri County")
-    c.drawString(100, 660, "Budget: KES 50,000,000")
-    c.drawString(100, 640, "Contractor: MegaBuild Ltd")
-    c.drawString(100, 620, "Expected Completion: 15KM of Tarmac")
+def create_tender_pdf(filename, project_title, budget, lat, lon):
+    c = canvas.Canvas(filename, pagesize=letter)
+    width, height = letter
+
+    # Header
+    c.setFont("Helvetica-Bold", 16)
+    c.drawString(50, height - 50, "REPUBLIC OF KENYA")
+    c.setFont("Helvetica", 12)
+    c.drawString(50, height - 70, "MINISTRY OF ROADS & INFRASTRUCTURE")
+    c.line(50, height - 80, 550, height - 80)
+
+    # Tender Details
+    c.setFont("Helvetica-Bold", 14)
+    c.drawString(50, height - 120, f"TENDER NOTICE: {project_title}")
+    
+    c.setFont("Helvetica", 12)
+    c.drawString(50, height - 150, f"Budget Allocation: {budget}")
+    c.drawString(50, height - 170, "Contractor: Zenith Paving Solutions Ltd")
+    c.drawString(50, height - 190, "Scope: Tarmacking and Drainage Works (15KM)")
+    c.drawString(50, height - 210, "Start Date: 10 Jan 2023")
+    c.drawString(50, height - 230, "Completion Date: 10 Jan 2024")
+
+    # HIDDEN LOCATION DATA (The AI looks for this)
+    c.setFont("Helvetica-Bold", 12)
+    c.drawString(50, height - 270, "SITE LOCATION DATA:")
+    c.setFont("Helvetica", 12)
+    c.drawString(50, height - 290, f"Latitude: {lat}")
+    c.drawString(50, height - 310, f"Longitude: {lon}")
+    c.drawString(50, height - 330, "Ward: Rumuruti Township")
+
     c.save()
-    print("sample_tender.pdf created!")
+    print(f"✅ Generated: {filename}")
 
 if __name__ == "__main__":
-    create_fake_tender()
+    # Create the GHOST PROJECT (Rumuruti - Dry area, no road)
+    create_tender_pdf("tender_ghost_road.pdf", 
+                      "Rumuruti-Maralal Feeder Road", 
+                      "KES 120,000,000", 
+                      0.5186, 36.6578)

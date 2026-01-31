@@ -2,47 +2,36 @@ import PyPDF2
 import re
 
 def extract_tender_details(pdf_path):
-    print(f"--- ANALYZING: {pdf_path} ---")
-    
-    # Open the PDF file
     try:
         with open(pdf_path, 'rb') as file:
             reader = PyPDF2.PdfReader(file)
             text = ""
-            # Read every page
             for page in reader.pages:
                 text += page.extract_text() + "\n"
-                
-        print(">>> DOCUMENT READ SUCCESSFULLY. SEARCHING FOR DATA...")
         
-        # --- THE INTELLIGENCE (Regex Patterns) ---
-        # We are looking for keywords like "Project Name" and "Budget"
-        # 1. Look for lines starting with "Project Title:" or similar
-        project_name_match = re.search(r"(Project Title|Project Name):\s*(.*)", text, re.IGNORECASE)
-        project_name = project_name_match.group(2).strip() if project_name_match else "NOT FOUND"
+        # --- FIXED REGEX ---
+        # 1. Project Name (Look for "TENDER NOTICE:" explicitly based on your generator)
+        name_match = re.search(r"TENDER NOTICE:\s*(.*)", text)
+        project_name = name_match.group(1).strip() if name_match else "Unknown Project"
 
-        # 2. Look for Budget/Cost (Looking for KES, Ksh, or numbers)
-        budget_match = re.search(r"(Budget|Cost|Amount):\s*(KES|Ksh\.?|Shs\.?)\s*([\d,]+)", text, re.IGNORECASE)
-        budget = f"{budget_match.group(2)} {budget_match.group(3)}" if budget_match else "NOT FOUND"
+        # 2. Budget (Look for "Budget Allocation:")
+        budget_match = re.search(r"Budget Allocation:\s*(.*)", text)
+        budget = budget_match.group(1).strip() if budget_match else "Unknown Budget"
 
-        # 3. Look for Location (Simplified for MVP)
-        location_match = re.search(r"(Location|County|Ward):\s*(.*)", text, re.IGNORECASE)
-        location = location_match.group(2).strip() if location_match else "NOT FOUND"
-
-        # --- REPORT ---
-        print("\n=== MULIKA AI: TENDER EXTRACTION REPORT ===")
-        print(f"PROJECT:  {project_name}")
-        print(f"LOCATION: {location}")
-        print(f"BUDGET:   {budget}")
-        print("===========================================\n")
+        # 3. Location (Look for "Ward:")
+        loc_match = re.search(r"Ward:\s*(.*)", text)
+        location = loc_match.group(1).strip() if loc_match else "Unknown Location"
         
-        return {"name": project_name, "location": location, "budget": budget}
-
+        # 4. Coordinates
+        lat_match = re.search(r"Latitude:\s*([0-9\.\-\+]+)", text)
+        lon_match = re.search(r"Longitude:\s*([0-9\.\-\+]+)", text)
+        
+        return {
+            "name": project_name,
+            "budget": budget,
+            "location": location,
+            "lat": lat_match.group(1) if lat_match else None,
+            "lon": lon_match.group(1) if lon_match else None
+        }
     except Exception as e:
-        print(f"ERROR: Could not read file. Reason: {e}")
-        return None
-
-# This line runs the function when you press Play
-if __name__ == "__main__":
-    # We will create this dummy file in Step 4
-    extract_tender_details("sample_tender.pdf")
+        return {}
