@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+requests
+pillow
+reportlab
+tensorflow-cpu
+scikit-learn
+scikit-image
+twilio
+google-generativeai
+PyPDF2
+scipy
+flask
