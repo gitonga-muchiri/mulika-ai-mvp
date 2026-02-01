@@ -1,0 +1,52 @@
+Project,Contractor,Location,Verdict,Score,Img_Before,Img_After
+Kimwarer Dam,CMC Di Ravenna,Keiyo,RED FLAG,0.0,batch_evidence/Batch_1_BEFORE.png,batch_evidence/Batch_1_AFTER.png
+Dongo Kundu Bypass,Fujita,Likoni,GREEN FLAG,23.619062,batch_evidence/Batch_2_BEFORE.png,batch_evidence/Batch_2_AFTER.png
+Nairobi SGR Terminus,CRBC,Syokimau,GREEN FLAG,48.641006,batch_evidence/Batch_3_BEFORE.png,batch_evidence/Batch_3_AFTER.png
+Ruringu Stadium,Benisa Ltd,Nyeri,RED FLAG,0.0,batch_evidence/Batch_4_BEFORE.png,batch_evidence/Batch_4_AFTER.png
+Thiba Dam Project,Strabag,Rukenya,RED FLAG,0.0,batch_evidence/Batch_5_BEFORE.png,batch_evidence/Batch_5_AFTER.png
+Dongo Kundu Bypass,Fujita,Likoni,GREEN FLAG,23.619062,batch_evidence/Batch_6_BEFORE.png,batch_evidence/Batch_6_AFTER.png
+Lower Kuja Irrigation,NIB,Migori,RED FLAG,0.0,batch_evidence/Batch_7_BEFORE.png,batch_evidence/Batch_7_AFTER.png
+Uhuru Gardens Museum,KDF Projects,Langata,GREEN FLAG,22.589499,batch_evidence/Batch_8_BEFORE.png,batch_evidence/Batch_8_AFTER.png
+Kinoru Stadium Meru,Toddy Civil Works,Meru,GREEN FLAG,10.423356,batch_evidence/Batch_9_BEFORE.png,batch_evidence/Batch_9_AFTER.png
+Nyeri Science Park,Dedan Kimathi Uni,Nyeri,RED FLAG,0.0,batch_evidence/Batch_10_BEFORE.png,batch_evidence/Batch_10_AFTER.png
+Likoni Floating Bridge,CRBC,Likoni,GREEN FLAG,29.222769,batch_evidence/Batch_11_BEFORE.png,batch_evidence/Batch_11_AFTER.png
+Galana Kulalu Farm,Green Arava,Tana,RED FLAG,0.0,batch_evidence/Batch_12_BEFORE.png,batch_evidence/Batch_12_AFTER.png
+Siaya Referral Hospital,Siaya County,Siaya,RED FLAG,0.0,batch_evidence/Batch_13_BEFORE.png,batch_evidence/Batch_13_AFTER.png
+Kamariny Stadium,Funan Construction,Iten,RED FLAG,0.0,batch_evidence/Batch_14_BEFORE.png,batch_evidence/Batch_14_AFTER.png
+Tot-Kolowa Road,Kura,Marakwet,RED FLAG,0.0,batch_evidence/Batch_15_BEFORE.png,batch_evidence/Batch_15_AFTER.png
+Ahero Interchange Stalled,KenHA,Kisumu,RED FLAG,0.0,batch_evidence/Batch_16_BEFORE.png,batch_evidence/Batch_16_AFTER.png
+Koru-Soin Dam,China Gezhouba,Kisumu,RED FLAG,0.0,batch_evidence/Batch_17_BEFORE.png,batch_evidence/Batch_17_AFTER.png
+Kisumu Port Refurb,Kenya Navy,Kisumu,GREEN FLAG,9.259129,batch_evidence/Batch_18_BEFORE.png,batch_evidence/Batch_18_AFTER.png
+Karatu Stadium,Smith & Gold,Gatundu,RED FLAG,0.0,batch_evidence/Batch_19_BEFORE.png,batch_evidence/Batch_19_AFTER.png
+Kapenguria-Makutano Road,KeRRA,West Pokot,RED FLAG,0.0,batch_evidence/Batch_20_BEFORE.png,batch_evidence/Batch_20_AFTER.png
+Mitihani House South C,KNEC,Nairobi,RED FLAG,0.0,batch_evidence/Batch_21_BEFORE.png,batch_evidence/Batch_21_AFTER.png
+Eastern Bypass Expansion,CCCC,Embakasi,GREEN FLAG,20.23611,batch_evidence/Batch_22_BEFORE.png,batch_evidence/Batch_22_AFTER.png
+Makupa Bridge,CCCC,Mombasa,GREEN FLAG,33.67303,batch_evidence/Batch_23_BEFORE.png,batch_evidence/Batch_23_AFTER.png
+GTC Nairobi Complex,Avic International,Westlands,GREEN FLAG,15.5165615,batch_evidence/Batch_24_BEFORE.png,batch_evidence/Batch_24_AFTER.png
+Tatu City Infrastructure,Rendeavour,Ruaka,GREEN FLAG,17.312122,batch_evidence/Batch_25_BEFORE.png,batch_evidence/Batch_25_AFTER.png
+Ulinzi Sports Complex,KDF Engineering,Langata,GREEN FLAG,8.231295,batch_evidence/Batch_26_BEFORE.png,batch_evidence/Batch_26_AFTER.png
+Kachibora-Kapcherop Road,TransNzoia Works,Trans Nzoia,RED FLAG,0.0,batch_evidence/Batch_27_BEFORE.png,batch_evidence/Batch_27_AFTER.png
+Suswa SGR Station,CCCC,Narok,GREEN FLAG,11.795843,batch_evidence/Batch_28_BEFORE.png,batch_evidence/Batch_28_AFTER.png
+Ruiru Sewerage Plant,Athi Water,Ruiru,GREEN FLAG,8.892738,batch_evidence/Batch_29_BEFORE.png,batch_evidence/Batch_29_AFTER.png
+Kibwezi-Kitui Road,Sinohydro Corp,Kitui South,GREEN FLAG,14.908028,batch_evidence/Batch_30_BEFORE.png,batch_evidence/Batch_30_AFTER.png
+Konza City Data Center,Konza Auth,Konza,GREEN FLAG,26.958275,batch_evidence/Batch_31_BEFORE.png,batch_evidence/Batch_31_AFTER.png
+Itare Dam Water Supply,CMC Di Ravenna,Kuresoi,RED FLAG,0.0,batch_evidence/Batch_32_BEFORE.png,batch_evidence/Batch_32_AFTER.png
+Dandora Stadium,Dandora Contractors,Dandora,GREEN FLAG,17.5999,batch_evidence/Batch_33_BEFORE.png,batch_evidence/Batch_33_AFTER.png
+Nakuru Market Complex,Nakuru County,Nakuru,GREEN FLAG,10.380983,batch_evidence/Batch_34_BEFORE.png,batch_evidence/Batch_34_AFTER.png
+Ngong Road Expansion,World Kaihatsu,Dagoretti,GREEN FLAG,12.22434,batch_evidence/Batch_35_BEFORE.png,batch_evidence/Batch_35_AFTER.png
+Nairobi Expressway Exit,CRBC,Mlolongo,GREEN FLAG,10.612011,batch_evidence/Batch_36_BEFORE.png,batch_evidence/Batch_36_AFTER.png
+Thiba Dam Project,Strabag,Rukenya,RED FLAG,0.0,batch_evidence/Batch_37_BEFORE.png,batch_evidence/Batch_37_AFTER.png
+Makupa Bridge,CCCC,Mombasa,GREEN FLAG,33.67303,batch_evidence/Batch_38_BEFORE.png,batch_evidence/Batch_38_AFTER.png
+Ramisi-Shimoni Road,Kwale Works,Kwale,RED FLAG,0.0,batch_evidence/Batch_39_BEFORE.png,batch_evidence/Batch_39_AFTER.png
+Bura Irrigation Gravity,IVRCL Infrastructure,Tana River,RED FLAG,0.0,batch_evidence/Batch_40_BEFORE.png,batch_evidence/Batch_40_AFTER.png
+Western Bypass,CRBC,Kiambu,GREEN FLAG,14.31452,batch_evidence/Batch_41_BEFORE.png,batch_evidence/Batch_41_AFTER.png
+Moi Uni Pension Tower,Moi University,Eldoret,RED FLAG,0.0,batch_evidence/Batch_42_BEFORE.png,batch_evidence/Batch_42_AFTER.png
+Nairobi Expressway Exit,CRBC,Mlolongo,GREEN FLAG,10.612011,batch_evidence/Batch_43_BEFORE.png,batch_evidence/Batch_43_AFTER.png
+Wote Stadium,Traphes Ent,Makueni,RED FLAG,0.0,batch_evidence/Batch_44_BEFORE.png,batch_evidence/Batch_44_AFTER.png
+Kakamega Referral Hosp,Kakamega County,Kakamega,RED FLAG,0.0,batch_evidence/Batch_45_BEFORE.png,batch_evidence/Batch_45_AFTER.png
+Lake Turkana Transmission,Isolux Corsan,Loiyangalani,RED FLAG,0.0,batch_evidence/Batch_46_BEFORE.png,batch_evidence/Batch_46_AFTER.png
+Chuka Stadium,Tharaka Nithi Govt,Chuka,RED FLAG,0.0,batch_evidence/Batch_47_BEFORE.png,batch_evidence/Batch_47_AFTER.png
+Arror Dam Project,CMC Di Ravenna,Elgeyo,RED FLAG,0.0,batch_evidence/Batch_48_BEFORE.png,batch_evidence/Batch_48_AFTER.png
+Mama Ngina Waterfront,Suhufi Agencies,Mombasa,GREEN FLAG,47.23057,batch_evidence/Batch_49_BEFORE.png,batch_evidence/Batch_49_AFTER.png
+Konza City Data Center,Konza Auth,Konza,GREEN FLAG,26.958275,batch_evidence/Batch_50_BEFORE.png,batch_evidence/Batch_50_AFTER.png
+Kenol-Sagana-Marua Road,Wu Yi Company,Muranga,RED FLAG,0.0,batch_evidence/Batch_51_BEFORE.png,batch_evidence/Batch_51_AFTER.png
