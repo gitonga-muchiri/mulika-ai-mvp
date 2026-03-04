@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {"id": "Ministry of Water", "group": 1, "size": 30},
+    {"id": "Apex Construction Ltd", "group": 2, "size": 25},
+    {"id": "Rift Valley Civil Works", "group": 2, "size": 25},
+    {"id": "Shell Company A (Logistics)", "group": 3, "size": 15},
+    {"id": "Shell Company B (Supplies)", "group": 3, "size": 15},
+    {"id": "Director 1 (Politically Exposed)", "group": 4, "size": 20},
+    {"id": "Director 2 (Proxy)", "group": 4, "size": 20},
+    {"id": "Offshore Account (Mauritius)", "group": 5, "size": 35}
+  ],
+  "links": [
+    {"source": "Ministry of Water", "target": "Apex Construction Ltd", "value": 10},
+    {"source": "Ministry of Water", "target": "Rift Valley Civil Works", "value": 10},
+    {"source": "Apex Construction Ltd", "target": "Shell Company A (Logistics)", "value": 5},
+    {"source": "Rift Valley Civil Works", "target": "Shell Company B (Supplies)", "value": 5},
+    {"source": "Shell Company A (Logistics)", "target": "Director 1 (Politically Exposed)", "value": 8},
+    {"source": "Shell Company B (Supplies)", "target": "Director 2 (Proxy)", "value": 8},
+    {"source": "Director 1 (Politically Exposed)", "target": "Director 2 (Proxy)", "value": 2},
+    {"source": "Director 1 (Politically Exposed)", "target": "Offshore Account (Mauritius)", "value": 15},
+    {"source": "Director 2 (Proxy)", "target": "Offshore Account (Mauritius)", "value": 15}
+  ]
+}
